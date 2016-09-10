@@ -3,7 +3,7 @@ import Component from 'inferno-component';
 
 class App extends Component {
     render() {
-        return <div>Hello **Inferno** World!</div>
+        return <div>An Inferno is coming!</div>
     }
 }
 

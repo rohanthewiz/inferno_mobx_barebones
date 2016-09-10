@@ -4,7 +4,8 @@
   "description": "A barebones app for InfernoJS",
   "main": "index.js",
   "scripts": {
-    "build": "browserify main.jsx -o index.js -t [ babelify ]",
+    "build": "npm run compile",
+    "compile": "browserify ./main.jsx -t babelify --outfile dist/index.js",
     "start": "http-server ."
   },
   "author": "Rohan Allison",
