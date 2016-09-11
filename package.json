@@ -1,12 +1,12 @@
 {
-  "name": "inferno_barebones",
+  "name": "inferno-mobx",
   "version": "1.0.0",
-  "description": "A barebones app for InfernoJS",
+  "description": "A barebones app for InfernoJS with Mobx",
   "main": "index.js",
   "scripts": {
     "build": "npm run compile",
     "compile": "browserify src/main.jsx -t babelify -o dist/index.js",
-    "watch": "onchange 'src/**/*.jsx' -- npm run build", 
+    "watch": "onchange 'src/**/*.jsx' -- npm run build",
     "start": "http-server ."
   },
   "author": "Rohan Allison",
@@ -14,12 +14,16 @@
   "dependencies": {
     "inferno": "^0.7.27",
     "inferno-component": "^0.7.27",
-    "inferno-dom": "^0.7.27"
+    "inferno-create-class": "^0.7.27",
+    "inferno-dom": "^0.7.27",
+    "mobx": "^2.5.1",
+    "mobx-inferno": "^0.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-core": "^6.14.0",
     "babel-plugin-inferno": "^0.7.7",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.14.0",
     "babelify": "^7.3.0",
     "http-server": "^0.9.0",

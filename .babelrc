@@ -1,4 +1,4 @@
 {
 	"presets": ["es2015"],
-	"plugins": ["inferno"]
+	"plugins": ["inferno", "transform-decorators-legacy"]
 }

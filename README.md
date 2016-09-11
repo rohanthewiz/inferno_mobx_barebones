@@ -1,4 +1,4 @@
-# Get started with InfernoJS (like ReactJS, but extreme performance)
+# Get started with InfernoJS and Mobx (like ReactJS, but extreme performance)
  with this minimal app
 
 ### There are just a few steps to get you up and running
@@ -16,6 +16,16 @@
     - To manually build: `npm run build`
 - Start the server: `npm start`
 - View the output in your browser by navigating to `localhost:8081` (CTRL-C to exit the server)
+
+**NOTE** Babel has backed down on support of decorators in ES2015 so if you get '@' is an "unexpected token" here's the fix:
+`npm install babel-plugin-transform-decorators-legacy --save-dev`. Then edit `.babelrc` to include:
+
+```
+{
+	"presets": ["es2015"],
+	"plugins": ["inferno", "transform-decorators-legacy"]
+}
+```
 
 You are set! Find a good tutorial and start writing blazing fast Inferno apps! You can start here: [github.com/trueadm/inferno](https://github.com/trueadm/inferno).
 `src/App.jsx` is a good place to start tinkering - go for it!
